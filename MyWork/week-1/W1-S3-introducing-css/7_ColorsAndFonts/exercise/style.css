@@ -45,7 +45,7 @@ header p {
     margin: 20px auto;
     border: 2px dashed #333;
     text-align: center;
-    background-color: #ffffff;
+    background-color: light;
     /* Default background color */
     font-family: Arial, sans-serif;
     /* Default font */
@@ -67,5 +67,29 @@ header p {
 .box-2 {
     background-color: lightgreen;
     font-family: 'Times New Roman', Times, serif
+    /* Green */
+}
+
+.box-3 {
+    background-color: lightcoral;
+    font-family: 'verdana', arial, sans-serif
+    /* Green */
+}
+
+.box-4 {
+    background-color: lightgoldenrodyellow;
+    font-family: 'courier new', Times, serif
+    /* Green */
+}
+
+.box-5 {
+    background-color: lightsalmon;
+    font-family: 'Georgia', arial, sans-serif
+    /* Green */
+}
+
+.box-6 {
+    background-color: lightpink;
+    font-family: 'Comic sans', sans-serif
     /* Green */
 }

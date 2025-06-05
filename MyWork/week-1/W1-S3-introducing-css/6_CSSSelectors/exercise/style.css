@@ -1,11 +1,11 @@
-/* TODO: what type of selector is this? */
+/* TODO: what type of selector is this? Wild Card - everything*/
 * {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* TODO: what type of selector is this? */
+/* TODO: what type of selector is this? Element selector*/
 h1 {
     color: blue;
 }
@@ -27,7 +27,7 @@ a {
     color: green;
 }
 
-/* TODO: what type of selector is this? */
+/* TODO: what type of selector is this? - Class */
 .highlight {
     background-color: yellow;
     font-weight: bold;
@@ -45,7 +45,7 @@ a {
     color: purple;
 }
 
-/* TODO: what type of selector is this? */
+/* TODO: what type of selector is this? - ID*/
 #uniqueDiv {
     color: red;
     font-size: 20px;

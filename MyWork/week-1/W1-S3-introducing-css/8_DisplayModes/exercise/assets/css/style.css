@@ -4,28 +4,36 @@ body {
 }
 
 header {
-    background-color: lightblue;
+    background-color: rgb(179, 173, 230);
     padding: 20px;
     text-align: center;
+
 }
 
 footer {
-    background-color: lightgray;
+    background-color: rgb(213, 171, 221);
     padding: 10px;
     text-align: center;
 }
 
 /* Issue: This text is currently hidden */
 .hidden-text {
-    display: none;
-    /* Fix this */
+    display: block;
+    text-align: center;
 }
 
 /* Items are currently stacked vertically */
 .item {
-    display: block;
+    display: inline-block;
     /* Change this to allow them to be side by side */
     padding: 10px;
-    background-color: lightgreen;
+    background-color: rgb(188, 147, 235);
     margin: 5px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.itemBoxes{
+  justify-items: center;
 }
