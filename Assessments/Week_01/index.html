@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Cooke Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Charlie Cooke</h1>
+        <h2>Web Developer</h2>   
+    </header>
+    <main>
+        <img src="Assets/Profile_Photo_BW_Cropped.jpg" style="height: 10rem;" alt="profile">
+        <p>I'm currently learning web devlopment as part of Step8Up skills bootcamp.<br>This is my first week.</p>
+    </main>
+    <section>
+        <h3>Get in Touch</h3>
+        <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="John Smith">
+            <br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="John@smith.com">
+            <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone"placeholder="07123 456789">
+            <br><br>
+                <label for="job">Department:</label>
+                <select name="job" id="job" form="jobform">
+                <option value="sales">Sales</option>
+                <option value="marketing">Marketing</option>
+                <option value="development">Development</option>
+                <option value="support">Support</option>
+                </select>
+            <br><br>
+                <label for="message">Message:</label>
+            <br>
+                <textarea id="message" name="message" rows="3" cols="30">Your message here
+                </textarea>
+            <br><br>
+                <label for="spam">Sign up to my mailing list</label>
+                <input type="checkbox" name="spam" id="spam">
+            <br><br>
+                <input type="button" value="submit">
+        </form>
+    </section>
+    <footer>
+        <h3>Contact</h3>
+        <a href="mailto:charlielcooke@gmail.com" title="email">email address</a>
+        <br>
+        <a href="tel:07981248564" title="phone">phone number</a>
+    </footer>
+</body>
+</html>
