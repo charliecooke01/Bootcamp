@@ -7,14 +7,39 @@ box-sizing: border-box;
 body{
     font-family: 'Poppins', sans-serif;
     background:  #0d0d0d;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center; 
     min-height: 100vh;
     color: white;
 }
 
 header{
     color: #d4b1f8;
+    padding-left: 50px
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-left: 50px
+}
+.about{
+    flex: 60%;
+    padding-right: 40px;
+}
+
+.profile{
+    flex: 30%;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.avatar{
+    border-radius: 5%;
+    height: 20rem;
 }
