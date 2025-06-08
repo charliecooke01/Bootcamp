@@ -9,31 +9,61 @@
 <body>
     <header>
         <!--Logo and menu-->  
-        <img class="logo" src="Assets/Title_v006.png" style="height: 5rem;" alt="profile">
+        <img class="logo" src="Assets/Title_v006.png" style="height: 5.4rem;" alt="profile">
     </header>
+    <!--Showreel Video--> 
     <section class="showreel">
- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1070364225?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Charlie Cooke Broadcast Graphics Showreel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1070364225?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Charlie Cooke Broadcast Graphics Showreel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </section>
     <main>
         <!--About-->
         <div class="about"></section>
             <h1>Charlie Cooke<br></h1>
-            <h2>Digital Designer</h2> 
+            <h3>Digital Designer</h3> 
             <p>Award-winning digital designer currently working in the broadcast industry, where my work is seen by millions of viewers worldwide.</p>
             <p>With a keen eye for detail and a diverse skill set, I bring a unique and versatile approach to every project.</p>
             <p>I'm passionate about blending creativity with technical precision to craft bold and dynamic graphic solutions.</p>
+            <input type="button" class="button" value="ABOUT ME">
             </div>
+        <!--photo-->
         <div class="profile">
             <img class="avatar" src="Assets/Profile_Photo_BW_Cropped.jpg"  alt="profile">
         </div>
     </main>
     <!--Projects-->
-    <section>
+    <section class="projects">
+        <h2>Broadcast Graphics</h2>
+            <section class="Gallery">
+                <img class="portfolioImage" src="Assets/ITV_Endboard_Single.png" alt="itv">
+                <img class="portfolioImage" src="Assets/News_Template_02.jpg" alt="news">
+                <img class="portfolioImage" src="Assets/Football_v_Page.png" alt="football">
+                <img class="portfolioImage" src="Assets/Broncos.png" alt="broncos">
+            </section>
+        <input type="button" class="button" value="VIEW PROJECTS">
+    </section>
+    <section class="projects">
         <h2>Marketing</h2>
+        <section class="Gallery">
+            <img class="portfolioImage" src="Assets/PP_Website_Green.jpg" alt="pp_website">
+            <img class="portfolioImage" src="Assets/Webinar_Prismon_Full.jpg" alt="webinar">
+            <img class="portfolioImage" src="Assets/Labtube_Richard_Moseley.png" alt="labtube">
+            <img class="portfolioImage" src="Assets/PP_Brochures.jpg" alt="pp_brochures">
+        </section>
+        <input type="button" class="button" value="VIEW PROJECTS">
+    </section>
+    <section class="projects">
+        <h2>Game Development</h2>
+        <section class="Gallery">
+            <img class="portfolioImage" src="Assets/EB_02.jpg" alt="eb_screen">
+            <img class="portfolioImage" src="Assets/EB_Banner.jpg" alt="eb_banner">
+            <img class="portfolioImage" src="Assets/Goat_Comparison.jpg" alt="goat">
+            <img class="portfolioImage" src="Assets/Jester_Render.jpg" alt="jester">
+        </section>
+        <input type="button" class="button" value="VIEW PROJECTS">
     </section>
     <!--Contact Form-->
     <form action="submit.php" method="post">
-        <h3>Get in Touch</h3>
+        <h2>Get in Touch</h2>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="John Smith">
             <br><br>
@@ -59,11 +89,11 @@
                 <label for="spam">Sign up to my mailing list</label>
                 <input type="checkbox" name="spam" id="spam">
             <br><br>
-                <input type="button" value="submit">
+                <input type="button" class="button" value="SUBMIT">
     </form>
 
     <footer>
-        <h3>Contact</h3>
+        <h2>Interested in working together?</h2>
         <a href="mailto:charlielcooke@gmail.com" title="email">email address</a>
         <br>
         <a href="tel:07981248564" title="phone">phone number</a>
