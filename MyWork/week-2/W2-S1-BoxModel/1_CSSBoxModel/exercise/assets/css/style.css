@@ -8,10 +8,7 @@ img {
     width: 200px;
     height: 200px;
     background-color: lightblue;
-    /* Margin property */
-    
-    /* Padding property */
-    
-    /* Border property */
-    border: 1px solid darkblue;
+    margin: 20px;
+    padding: 20px;
+    border: 8px solid darkblue;
 }

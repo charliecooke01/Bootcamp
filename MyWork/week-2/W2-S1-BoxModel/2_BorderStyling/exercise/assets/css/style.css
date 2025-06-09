@@ -64,8 +64,9 @@ img {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    border: 2px solid black;
+    border: 0px solid black;
     /* Old styling */
-   
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     /* Add New styling here */
 }
