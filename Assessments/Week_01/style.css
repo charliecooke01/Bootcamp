@@ -9,12 +9,50 @@ body{
     font-family: 'Poppins', sans-serif;
     background:  #0d0d0d;
     min-height: 100vh;
+    margin: 0;
     color: white;
 }
 
 /* Logo header */
 header{
     padding: 0px 0px 10px 5%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background:#0d0d0d;
+    z-index: 2;
+}
+
+.logo{
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+/* Menu style */
+a {
+    text-decoration: none;
+}
+
+a:link {
+  color:#d4b1f8
+}
+
+a:hover {
+  color: white;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* Spacing for anchor links*/
+.anchor{
+    position: relative;
+    top: -4rem;
 }
 
 /* About section */
@@ -83,7 +121,7 @@ h3{
 }
 
 .projects{
-padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .projects img{
@@ -96,6 +134,7 @@ form{
     background-color: #d4b1f8;
     color: black;
     padding: 50px;
+    
 }
 
 form > h2{
@@ -134,4 +173,16 @@ input, textarea, select{
     background-color:#d4b1f8;
     border-color: black;
     color: black;
-} 
+}
+
+.button:hover {
+    border-color: white;
+    color: #d4b1f8;
+    background-color:#231e29;
+}
+
+.button-pink:hover{ 
+    background-color:#dec4f8;
+    border-color: white;
+    color: white;
+}

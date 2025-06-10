@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a id="home" class="anchor"></a>
     <header>
         <!--Logo and menu-->  
-        <img class="logo" src="Assets/Title_v006.png" style="height: 5.4rem;" alt="profile">
+        <a href="#home"><img class="logo" src="Assets/Title_v006.png" alt="profile"></a>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#broadcast">Broadcast</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#game">Game Dev</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
     <!--Showreel Video--> 
     <section class="showreel">
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1070364225?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Charlie Cooke Broadcast Graphics Showreel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </section>
-    <main>
-        <!--About-->
+    <!--About-->
+    <main id="about" class="anchor">   
         <div class="about"></section>
             <h1>Charlie Cooke<br></h1>
             <h3>Digital Designer</h3> 
@@ -31,7 +39,9 @@
         </div>
     </main>
     <!--Projects-->
-    <section class="projects">
+    <!--Broadcast-->
+    <a id="broadcast" class="anchor"></a>
+    <section class ="projects">
         <h2>Broadcast Graphics</h2>
             <section class="Gallery">
                 <img class="portfolioImage" src="Assets/ITV_Endboard_Single.png" alt="itv">
@@ -42,6 +52,8 @@
             <P>Creating logic based graphics that dynamically adapt in real time, delivering data-driven, responsive branding live on air.</P>
         <input type="button" class="button" value="VIEW PROJECTS">
     </section>
+    <!--Marketing-->
+    <a id="marketing" class="anchor"></a>
     <section class="projects">
         <h2>Marketing</h2>
         <section class="Gallery">
@@ -53,6 +65,8 @@
         <P>Producing digital content and visual storytelling, that enhance brand identity and drive results across multiple platforms.</P>
         <input type="button" class="button" value="VIEW PROJECTS">
     </section>
+    <!--Game Development-->
+    <a id="game" class="anchor"></a>
     <section class="projects">
         <h2>Game Development</h2>
         <section class="Gallery">
@@ -65,7 +79,7 @@
         <input type="button" class="button" value="VIEW PROJECTS">
     </section>
     <!--Contact Form-->
-    <form action="submit.php" method="post">
+    <form id="contact" action="submit.php" method="post">
         <h2>Get in Touch</h2>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="John Smith">
