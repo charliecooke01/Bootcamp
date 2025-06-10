@@ -91,13 +91,30 @@ padding-bottom: 100px;
     padding: 0.3%;
 }
 
+/* Style contact form */
+form{
+    background-color: #d4b1f8;
+    color: black;
+    padding: 50px;
+}
+
+form > h2{
+    color: black;
+}
+
+input, textarea, select{
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* All button styles */
-.button{ 
-    background-color: #0d0d0d;
+.button, .button-pink{
     border-radius: 0px;
     border-width: 1px;
-    border-color: #d4b1f8;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -105,4 +122,16 @@ padding-bottom: 100px;
     font-size: 14px;
     margin: 15px 0px;
     cursor: pointer;
+}
+
+.button{ 
+    background-color: #0d0d0d;
+    border-color: #d4b1f8;
+    color: white;
+} 
+
+.button-pink{ 
+    background-color:#d4b1f8;
+    border-color: black;
+    color: black;
 } 
