@@ -1,0 +1,17 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+input, textarea, select{
+    padding: 3px;
+    margin-left: 5px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #0d0d0d;
+}
+

@@ -57,6 +57,14 @@ button:hover {
     background-color: #4cae4c;
 }
 
+.email-label::before {
+    content: "✉️";
+}
+
+.phone-label::before {
+    content: "📞";
+}
+
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
 
@@ -64,6 +72,12 @@ button:hover {
 /* Styling the Terms and Conditions Link */
 .terms-link {
     color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.terms-link:hover {
+    color: #30be94;
     text-decoration: none;
     font-size: 14px;
 }
