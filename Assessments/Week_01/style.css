@@ -63,10 +63,6 @@ main{
     padding: 100px 5%;
 }
 
-form, footer {
-    padding-left: 5%;
-}
-
 .projects{
     padding: 0 5%;
 }
@@ -133,8 +129,9 @@ h3{
 form{
     background-color: #d4b1f8;
     color: black;
-    padding: 50px;
-    
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 5%;
 }
 
 form > h2{
@@ -185,4 +182,13 @@ input, textarea, select{
     background-color:#dec4f8;
     border-color: white;
     color: white;
+}
+footer{
+    margin-bottom: 50px;
+    padding-left: 5%;
+}
+
+.icon{
+    height: 25px;
+    margin-right: 20px;
 }
