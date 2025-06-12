@@ -17,7 +17,7 @@ header {
 .navbar {
     /* TODO: explain the purpose of the following properties */
     display: flex;
-
+    /* puts items in flexbox */
     justify-content: center;
     background-color: #007BFF;
     padding: 10px;
@@ -39,7 +39,7 @@ header {
 .content {
     
     /* TODO: explain the purpose of the following properties */
-    flex-wrap: wrap;
+    flex-wrap:unset;
     display: flex;
 
     justify-content: space-around;
@@ -47,7 +47,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     background-color: white;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 /* Flexbox items */
@@ -59,7 +59,7 @@ header {
     text-align: center;
     border-radius: 5px;
 
-    /* TODO: explain the purpose of the following properties */
+    /* flex-grow, flex-shrink, flex-basis  */
     flex: 1 1 200px;
 }
 

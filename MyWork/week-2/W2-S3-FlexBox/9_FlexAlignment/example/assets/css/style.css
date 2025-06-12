@@ -23,7 +23,7 @@ body {
     /* Flexbox alignment properties */
     justify-content: space-around;
     /* Try: flex-start, center, space-between */
-    align-items: center;
+    align-items: top;
     /* Try: flex-start, center, flex-end */
 }
 
