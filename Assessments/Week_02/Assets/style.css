@@ -1,0 +1,83 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #a2c0af;
+    color: rgb(36, 36, 36);
+    display: flex;
+    justify-content:space-between;
+    padding: 30px;
+}
+
+/* Flexbox navigation */
+.navbar {
+
+}
+
+.navbar a {
+    color: rgb(37, 37, 37);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+.banner {
+    background-color: #5d615e;
+    color: white;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flexbox content area */
+.headers {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Flexbox items */
+.headerbox {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8dad4;
+    color: rgb(37, 37, 37);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.tempbox {
+    background-color: #797e6e;
+    color: white;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    text-align:center
+    
+}
+
+.headerbox:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+    background-color: #515c61;
+    color: white;
+    padding: 20px 0;
+
+}
