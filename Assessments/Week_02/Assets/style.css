@@ -125,12 +125,24 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     align-items:flex-start;
-    justify-content:center;
-    padding: 20px;
+    justify-content:center; 
 }
 
 footer li {
     list-style-type: none;
+}
+
+.menu{
+    margin: 0;
+}
+
+.icon{
+    height: 30px;
+    
+}
+
+.icon:hover {
+  opacity: 0.6;
 }
 
 /* All button styles */
