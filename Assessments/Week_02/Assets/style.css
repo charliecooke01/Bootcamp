@@ -9,10 +9,16 @@ body {
 
 header {
     background-color: #a2c0af;
-    color: rgb(36, 36, 36);
+    color: #354843;
     display: flex;
     justify-content:space-between;
     padding: 30px;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 50%;
+    min-width: 200px;
 }
 
 /* Flexbox navigation */
@@ -39,7 +45,7 @@ header {
 }
 
 /* Flexbox content area */
-.headers {
+.food {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
@@ -49,7 +55,7 @@ header {
 }
 
 /* Flexbox items */
-.headerbox {
+.foodbox {
     display: flex;
     flex-direction: column;
     background-color: #d8dad4;
@@ -70,7 +76,7 @@ header {
     
 }
 
-.headerbox:hover {
+.foodbox:hover {
     background-color: #218838;
 }
 
