@@ -116,7 +116,10 @@ header {
     opacity: 0.4;
 }
 
-
+.flag::before{
+    content:url(https://img.icons8.com/color/24/italy.png);
+    margin: 10px;
+}
 .about {
     display: flex;
     background-color: #e0e2dd;
