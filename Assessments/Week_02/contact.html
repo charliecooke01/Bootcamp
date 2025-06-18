@@ -21,44 +21,20 @@
         <input type="button" class="button" value="Order Now">
     </header>
     <main>
-        <section class="food">
-            <div class="mealbox">
-                <img class="food-image" src="Assets/Food/Margherita.jpg" alt="Margherita">
-                <div class="meal-text">
-                    <h2>Margherita</h2>
-                    <h4>£10</h4>
-                    <p>Fresh tomato sauce, basil, and mozzarella cheese top a crisp, chewy crust.</p>  
-                    <h4 class="order">Order</h4>
-                </div>
-            </div>
-            <div class="mealbox">
-                <img class="food-image" src="Assets/Food/Pepperoni.jpg" alt="Pepperoni">
-                <div class="meal-text">
-                    <h2>Pepperoni</h2>
-                    <h4>£12</h4>
-                    <p>Spicy sausage, creamy mozzarella and our tart, garlic-spiked pizza sauce.</p>
-                    <h4 class="order">Order</h4>
-                </div>
-            </div>
-            <div class="mealbox">
-                <img class="food-image" src="Assets/Food/Chicken.jpg" alt="Chicken">
-                <div class="meal-text">
-                    <h2>Chicken</h2>
-                    <h4>£13</h4>
-                    <p>Pesto, chicken, roasted red peppers, fontina cheese, and creamy ricotta.</p>
-                    <h4 class="order">Order</h4>
-                </div>
-            </div>
-            <div class="mealbox">
-                <img class="food-image" src="Assets/Food/hawaiian.jpg" alt="Hawaiian">
-                <div class="meal-text">
-                    <h2>Hawaiian</h2>
-                    <h4>£13</h4>
-                    <p>Juicy caramelized pineapple, prosciutto and pickled jalapeños.</p>
-                    <h4 class="order">Order</h4>
-                </div>
-            </div>
-        </section>
+     <form id="contact" action="submit.php" method="post">
+        <h2>Please get in touch</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="John Smith">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="John@smith.com">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone"placeholder="07123 456789">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" cols="30">Your message here</textarea>
+                <label for="spam">Sign up to hear our latest deals</label>
+                <input type="checkbox" name="spam" id="spam">
+                <input type="button" class="button-submit" value="SUBMIT">
+    </form>
     </main>
     <footer>
         <ul class="footer-menu">
