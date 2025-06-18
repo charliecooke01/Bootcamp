@@ -64,14 +64,15 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    background-color: #f5f7f0;
 }
 
 /* Flexbox items */
 .foodbox {
     display: flex;
     flex-direction: column;
-    background-color: #d8dad4;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
     color: rgb(37, 37, 37);
     padding: 7px;
     margin: 10px;
@@ -82,13 +83,20 @@ header {
 }
 
 .foodbox:hover {
-    background-color: #b5b8b1;
+    background-color: #cddac4;
     transform: scale(1.05);
 }
 
+.food-image{
+    max-height: 200px;
+}
+
+.meal-text{
+    margin: 0 20px;
+}
 .about {
     display: flex;
-    background-color: #eef0eb;
+    background-color: #e0e2dd;
     justify-content:space-evenly;
     flex-wrap: wrap;
     align-items: center;
@@ -100,7 +108,7 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     color: rgb(37, 37, 37);
-    background-color: #fdfdfd;
+    background-color: white;
     padding: 30px;
     margin: 10px;
     text-align: center;
@@ -120,6 +128,18 @@ header {
 .deal-image:hover {
     opacity: 0.9;
     transform: scale(1.05);
+}
+
+.mealbox {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
+    color: rgb(37, 37, 37);
+    padding: 7px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* Footer styling */
