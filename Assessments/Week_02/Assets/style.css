@@ -41,7 +41,8 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+    background-color: #83a19a;
+    color: #405550;
 }
 
 .banner {
@@ -72,24 +73,17 @@ header {
     flex-direction: column;
     background-color: #d8dad4;
     color: rgb(37, 37, 37);
-    padding: 20px;
+    padding: 7px;
     margin: 10px;
     text-align: center;
-}
-
-.tempbox {
-    background-color: #797e6e;
-    color: white;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    margin: 10px;
-    text-align:center
-    
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .foodbox:hover {
-    background-color: #218838;
+    background-color: #b5b8b1;
+    transform: scale(1.05);
 }
 
 .about {
@@ -100,6 +94,7 @@ header {
     align-items: center;
     padding: 20px;
 }
+
 .about-box {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +105,7 @@ header {
     margin: 10px;
     text-align: center;
     justify-content:center;
-    
+    border-radius: 10px;
 }
 .deals-box{
     max-width: 850px;
@@ -118,6 +113,13 @@ header {
 
 .deal-image {
     margin: 4px 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.deal-image:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
 }
 
 /* Footer styling */
@@ -132,13 +134,18 @@ footer {
     justify-content:space-around; 
 }
 
-
 footer li {
     list-style-type: none;
 }
 
-.menu{
-    margin: 0;
+.footer-menu a {
+    color: rgb(37, 37, 37);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #607a74;
 }
 
 .icon{
@@ -150,7 +157,7 @@ footer li {
   opacity: 0.6;
 }
 
-/* All button styles */
+/* Button styles */
 .button {
     border-radius: 30px;
     border-width: 0px;
