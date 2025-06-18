@@ -1,6 +1,13 @@
 /* import google font */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
 
+/* CSS Variables */
+:root {
+    --bg-color: #f5f7f0;
+    --text-color: rgb(37, 37, 37);
+    --box-padding: 30px;
+}
+
 /* General styling */
 *{
     box-sizing: border-box;
@@ -16,6 +23,7 @@ body {
     background-color: #f4f4f4;    
 }
 
+/* Header Styling */
 header {
     background-color: #a2c0af;
     color: #354843;
@@ -24,7 +32,7 @@ header {
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
-    padding: 30px;
+    padding: var(--box-padding);
 }
 
 .logo{
@@ -35,7 +43,7 @@ header {
     margin: 15px;
 }
 .navbar a {
-    color: rgb(37, 37, 37);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -45,6 +53,7 @@ header {
     color: #405550;
 }
 
+/* Homepage banner image */
 .banner {
     height: 400px;
     text-align: center;
@@ -57,23 +66,22 @@ header {
     margin-left: -200%;
 }
 
-/* Flexbox content area */
+/* Main food containers*/
 .food {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
-    background-color: #f5f7f0;
+    background-color: var(--bg-color);
 }
 
-/* Flexbox items */
 .foodbox {
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
-    color: rgb(37, 37, 37);
+    color: var(--text-color);
     padding: 7px;
     margin: 10px;
     text-align: center;
@@ -95,11 +103,11 @@ header {
     margin: 0 20px;
 }
 
+/* Pseduo elements for add to cart */
 .order {
     cursor: pointer;
 }
 
-/* Pseduo elemnts for add to cart */
 .order::after {
     content: "+";
 }
@@ -116,10 +124,13 @@ header {
     opacity: 0.4;
 }
 
+/* Pseduo element for italian flag on homepage */
 .flag::before{
     content:url(https://img.icons8.com/color/24/italy.png);
     margin: 10px;
 }
+
+/* About section on homepage */
 .about {
     display: flex;
     background-color: #e0e2dd;
@@ -130,17 +141,29 @@ header {
 }
 
 .about-box {
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    color: rgb(37, 37, 37);
-    background-color: white;
-    padding: 30px;
-    margin: 10px;
-    text-align: center;
+    padding: var(--box-padding);
     justify-content:center;
+}
+
+/* Food items in food pages */
+.mealbox {
+    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
+    padding: 7px;
+    max-width: 800px;
+}
+
+.about-box, .mealbox{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    color: var(--text-color);
+    margin: 10px;   
     border-radius: 10px;
 }
+
+/* Individual deal containers */
 .deals-box{
     max-width: 850px;
 }
@@ -154,19 +177,6 @@ header {
 .deal-image:hover {
     opacity: 0.9;
     transform: scale(1.05);
-}
-
-.mealbox {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
-    color: rgb(37, 37, 37);
-    padding: 7px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 800px;
 }
 
 /* Style contact form */
@@ -211,7 +221,7 @@ footer li {
 }
 
 .footer-menu a {
-    color: rgb(37, 37, 37);
+    color: var(--text-color);
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -230,32 +240,30 @@ footer li {
 }
 
 /* Button styles */
-.button {
+.button, .button-submit{
     border-radius: 30px;
     border-width: 0px;
     padding: 10px 32px;
     margin: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
     cursor: pointer;
-    background-color: #6d857f;
-    color: white;
 }
 
+/* Header button */
+.button{
+    background-color: #6d857f;
+    color: white;
+    font-size: 18px; 
+}
+
+/* contact form button */
 .button-submit{
-    border-radius: 30px;
-    border-width: 0px;
-    padding: 10px 32px;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
     font-size: 16px;
-    cursor: pointer;
     background-color: #bfd8d2;
 }
 
-.button:hover {
+.button:hover, .button-submit:hover {
     background-color:#83a19a;
     color: #405550;
 }
