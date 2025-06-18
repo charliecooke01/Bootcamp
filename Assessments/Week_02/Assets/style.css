@@ -94,6 +94,29 @@ header {
 .meal-text{
     margin: 0 20px;
 }
+
+.order {
+    cursor: pointer;
+}
+
+/* Pseduo elemnts for add to cart */
+.order::after {
+    content: "+";
+}
+
+.order::after {
+    content: "+";
+    padding: 5px 10px;
+    background-color: #f0eded;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.order:hover {
+    opacity: 0.4;
+}
+
+
 .about {
     display: flex;
     background-color: #e0e2dd;
@@ -140,6 +163,7 @@ header {
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    max-width: 800px;
 }
 
 /* Footer styling */
