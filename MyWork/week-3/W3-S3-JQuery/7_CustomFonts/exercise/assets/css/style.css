@@ -3,6 +3,7 @@ body {
     margin: 20px;
     padding: 0;
     background-color: #f0f0f0;
+    font-family: Edu NSW ACT Hand Precursive, sans-serif;
 }
 
 /* Header Styles */
@@ -11,7 +12,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Edu NSW ACT Hand Precursive', sans-serif;
 }
 
 /* Main Content Styles */
@@ -28,20 +29,20 @@ section {
 }
 
 h2 {
-    font-family: Verdana, sans-serif;
+    font-family: Roboto, sans-serif;
     color: #333333;
 }
 
 /* Paragraph Styles */
 p {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     color: #333333;
     margin-bottom: 15px;
 }
 
 p.highlight {
     background-color: #ffeb3b;
-    font-family: "Times New Roman", serif;
+    font-family: Roboto, serif;
     color: #000000;
     padding: 10px;
     border-left: 5px solid #007acc;
@@ -50,9 +51,9 @@ p.highlight {
 
 /* Footer Styles */
 footer {
-    background-color: #333333;
+    background-color: #c9bfbf;
     color: white;
     padding: 10px;
     text-align: center;
-    font-family: Verdana, sans-serif;
+    font-family: Roboto, sans-serif;
 }
