@@ -1,0 +1,273 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --bg-color: #f5f7f0;
+    --text-color: rgb(37, 37, 37);
+    --box-padding: 30px;
+}
+
+/* General styling */
+*{
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Lexend Exa", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;    
+}
+
+/* Header Styling */
+header {
+    background-color: #a2c0af;
+    color: #354843;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    padding: var(--box-padding);
+}
+
+.logo{
+    width: 50%;
+    min-width: 200px;
+}
+.navbar{
+    margin: 15px;
+}
+.navbar a {
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #83a19a;
+    color: #405550;
+}
+
+/* Homepage banner image */
+.banner {
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner img{
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
+
+/* Main food containers*/
+.food {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.foodbox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
+    color: var(--text-color);
+    padding: 7px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.foodbox:hover {
+    background-color: #cddac4;
+    transform: scale(1.05);
+}
+
+.food-image{
+    max-height: 200px;
+}
+
+.meal-text{
+    margin: 0 20px;
+}
+
+/* Pseduo elements for add to cart */
+.order {
+    cursor: pointer;
+}
+
+.order::after {
+    content: "+";
+}
+
+.order::after {
+    content: "+";
+    padding: 5px 10px;
+    background-color: #f0eded;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.order:hover {
+    opacity: 0.4;
+}
+
+/* Pseduo element for italian flag on homepage */
+.flag::before{
+    content:url(https://img.icons8.com/color/24/italy.png);
+    margin: 10px;
+}
+
+/* About section on homepage */
+.about {
+    display: flex;
+    background-color: #e0e2dd;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-box {
+    flex-wrap: wrap;
+    padding: var(--box-padding);
+    justify-content:center;
+}
+
+/* Food items in food pages */
+.mealbox {
+    box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
+    padding: 7px;
+    max-width: 800px;
+}
+
+.about-box, .mealbox{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    color: var(--text-color);
+    margin: 10px;   
+    border-radius: 10px;
+}
+
+/* Individual deal containers */
+.deals-box{
+    max-width: 850px;
+}
+
+.deal-image {
+    margin: 4px 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.deal-image:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Style contact form */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7f0;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-left: 5%;
+}
+
+form > h2{
+    color: black;
+}
+
+input, textarea, select{
+    display: block;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #0d0d0d;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+/* Footer styling */
+footer {
+    background-color: #94a19d;
+    color: #161616;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-around; 
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.footer-menu a {
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #607a74;
+}
+
+.icon{
+    height: 30px;
+    margin: 10px;
+}
+
+.icon:hover {
+  opacity: 0.6;
+}
+
+/* Button styles */
+.button, .button-submit{
+    border-radius: 30px;
+    border-width: 0px;
+    padding: 10px 32px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header button */
+.button{
+    background-color: #6d857f;
+    color: white;
+    font-size: 18px; 
+}
+
+/* contact form button */
+.button-submit{
+    font-size: 16px;
+    background-color: #bfd8d2;
+    padding: auto;
+}
+
+.button:hover, .button-submit:hover {
+    background-color:#83a19a;
+    color: #405550;
+}
