@@ -1,20 +1,22 @@
-var firstName = "John";
-var surName = "Smith";
+// Declare Variables
+//Name
+var firstName = "Charlie";
+var surName = "Cooke";
 
-const surName = "Doe";
-surName = "Doe";
+// Age
+var age = 35;
 
-var age = 25;
-var retirementAge = 67;
+// Retirement age
+var retirementAge = 33;
 
-console.log("you" + " " + "can" + "add" + " " + "strings" + " " + "together");
-
+console.log("you" + " " + "can" + " " + "add" + " " + "strings" + " " + "together");
 console.log(`or use template literals to output details for Mr. ${surName} `);
 
 // TODO: log out the full name "John Smith" by concatenating the variables firstName and surName
+var fullName = firstName + " " + surName;
 
 // TODO: log out "John Smith and I amd 25 years old"
-
-// TODO: Create a variable to store the number of years until retirement
+console.log(`I am ${fullName} and I am ${age} years old`);
 
 // TODO: log out "I have 42 years until retirement"
+console.log(`I have ${retirementAge} years until retirement`);
