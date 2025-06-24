@@ -5,16 +5,27 @@
 :root {
     --header-color: #a2c0af;
     --bg-color: #f5f7f0;
-    --text-color: rgb(182, 23, 23);
+    --text-color: #161616;;
+}
+
+body {
+    font-family: "Lexend Exa", sans-serif;
+    color: var(--text-color);
 }
 
 /* Bootstrap Overrides */
+.text-primary{
+    color: var(--text-color) !important;
+}
+
 .bg-primary {
     background-color: var(--header-color) !important;
 }
+
 .bg-info {
     background-color: var(--bg-color) !important;
 }
+
 .card {
     min-width: 20rem;
     border-width: 0px;
@@ -22,10 +33,11 @@
     cursor: pointer;
     box-shadow: 2px 2px 5px rgb(215, 218, 219, 0.5);
 }
+
 .card:hover {
-    opacity: 0.9;
     transform: scale(1.05);
 }
+
 .btn-primary {
     background-color: #6d857f;
     color: white;
@@ -35,28 +47,49 @@
     padding: 10px 32px;
     margin: 20px;
 }
+
 .btn-primary:hover {
     background-color:#83a19a;
     color: #405550;
-}
-
-body {
-    font-family: "Lexend Exa", sans-serif;
-    color: var(--text-color);
 }
 
 .logo{
     max-height: 200px;
     min-width: 200px;
 }
+.banner {
+    max-height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner img{
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+}
 
 .navbar a:hover {
     background-color: #83a19a;
-    color: #405550;
+    color: #405550 !important;
 }
 
 /* Pseduo element for italian flag on homepage */
 .flag::before{
     content:url(https://img.icons8.com/color/24/italy.png);
     margin: 10px;
+}
+
+.deal-image {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.deal-image:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.icon:hover, .footer-menu a:hover{
+  opacity: 0.6;
 }
