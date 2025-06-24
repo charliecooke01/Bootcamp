@@ -7,7 +7,7 @@
     <title>Charlie's Pizza House</title>
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="Assets/style.css"> -->
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <!-- Logo -->
-            <a href="index.html"><img class="navbar-brand logo" src="Assets/Pizza_Logo_Black.png" alt="logo"></a>
+            <a href="index.htm"><img class="navbar-brand logo" src="Assets/Pizza_Logo_Black.png" alt="logo"></a>
             <!-- Dropdown toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <input type="button" class="button" value="Order Now">
+                    <input type="button" class="btn btn-primary" value="Order Now">
                 </ul>
             </div>
         </div>
@@ -49,31 +49,31 @@
     </div>
 
     <!-- Main Content Section --> 
-    <main class="container-fluid text-center bg-info ">
+    <main class="container-fluid text-center bg-info">
         
         <!-- Food Sections --> 
         <div class="card-deck d-flex justify-content-evenly mx-4 py-3">
             <div class="row">
-                <div class="card col-md-3 p-2 m-2" href="pizza.html">
-                    <img src="Assets/Food/Margherita.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-title">Pizza</h2>
-                    <p class="card-text">Cooked in our<br>wood fired oven</p>
-                    </div>
+                <div class="card col-sm-3 p-2 m-2" href="pizza.html">
+                    <img src="Assets/Food/Margherita.jpg" class="card-img-top" alt="pizza">
+                        <div class="card-body">
+                        <h2 class="card-title">Pizza</h2>
+                        <p class="card-text">Cooked in our<br>wood fired oven</p>
+                        </div>
                 </div>
-                <div class="card col-md-3 m-2 p-2">
-                    <img src="Assets/Food/Carbonara.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-title">Pasta</h2>
-                    <p class="card-text">Fresh and<br>hand made</p>
-                    </div>
+                <div class="card col-sm-3 m-2 p-2">
+                    <img src="Assets/Food/Carbonara.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                        <h2 class="card-title">Pasta</h2>
+                        <p class="card-text">Fresh and<br>hand made</p>
+                        </div>
                 </div>
-                <div class="card col-md-3 m-2 p-2">
-                    <img src="Assets/Food/Dough-balls.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-title">Sides</h2>
-                    <p class="card-text">Level up<br>your meal</p>
-                    </div>
+                <div class="card col-sm-3 m-2 p-2">
+                    <img src="Assets/Food/Dough-balls.jpg" class="card-img-top" alt="Sides">
+                        <div class="card-body">
+                        <h2 class="card-title">Sides</h2>
+                        <p class="card-text">Level up<br>your meal</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -97,19 +97,26 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-3">
-        <ul class="footer-menu">
-            <li><a href="pizza.html">Pizza</a></li>
-            <li><a href="pasta.html">Pasta</a></li>
-            <li><a href="sides.html">Sides</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="index.html"><img class="logo" src="Assets/Pizza_Logo_Black.png" alt="logo"></a>
-            <div class="socials">
-                <a href="https://www.facebook.com" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/161616/facebook--v1.png" alt="facebook"></a>
+    <footer class="row d-flex justify-content-center bg-primary text-white text-center py-3">
+        <!-- Menu -->
+        <div class="col-md-4">
+            <ul class="footer-menu">
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="sides.html">Sides</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Logo -->
+        <div class="col-md-4">
+            <a href="index.htm"><img class="logo" src="Assets/Pizza_Logo_Black.png" alt="logo"></a>
+        </div>
+        <!-- Socials -->
+        <div class="col-md-4">
+            <a href="https://www.facebook.com" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/161616/facebook--v1.png" alt="facebook"></a>
                 <a href="https://www.instagram.com" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/161616/instagram-new--v1.png" alt="instagram"></a>
                 <a href="https://www.youtube.com" target="_blank"><img class="icon" src="https://img.icons8.com/ios-filled/50/youtube-squared.png" alt="youtube-squared" alt="youtube"></a>
-            </div>
+        </div>
     </footer>
 
     <!-- JS Scripts -->
