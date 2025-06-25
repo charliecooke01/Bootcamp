@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlie's Pizza House</title>
+    <title>Pizza</title>
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
@@ -29,13 +29,13 @@
                             <a class="nav-link text-primary" href="pizza.html">Pizza</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Pasta</a>
+                            <a class="nav-link text-primary" href="pasta.html">Pasta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Sides</a>
+                            <a class="nav-link text-primary" href="sides.html">Sides</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Contact</a>
+                            <a class="nav-link text-primary" href="contact.html">Contact</a>
                         </li>
                         <input type="button" class="btn btn-primary" value="Order Now">
                     </ul>
@@ -43,55 +43,48 @@
         </div>
     </nav>
 
-    <!-- Banner -->  
-    <div class="col-md-12 banner">
-        <img class="img-responsive" width="100%"  src="Assets/Food/Pizza-Banner.jpg">
-    </div>
-
     <!-- Main Content Section --> 
     <main class="container-fluid text-center bg-info">
         
         <!-- Food Sections --> 
         <div class="card-deck d-flex justify-content-evenly mx-4 py-3 ">
-            <div class="row">
-                <a class="card col-sm-3 p-2 m-2 text-decoration-none text-reset" href="pizza.html">
-                    <img src="Assets/Food/Margherita.jpg" class="card-img-top" alt="pizza">
+            <div class="row justify-content-evenly">
+                <a class="card col-md-2 p-2 m-2 text-decoration-none text-reset">
+                    <img src="Assets/Food/Margherita.jpg" class="card-img-top" alt="Margherita">
                         <div class="card-body">
-                        <h2 class="card-title">Pizza</h2>
-                        <p class="card-text">Cooked in our<br>wood fired oven</p>
+                            <h2 class="card-title">Margherita</h2>
+                            <h4 class="card-text">£10</h4>
+                            <p class="card-text">Fresh tomato sauce, basil, and mozzarella cheese top a crisp, chewy crust.</p>
+                            <h5 class="card-text order">Order</h5>
                         </div>
                     </a>
-                <div class="card col-sm-3 m-2 p-2 text-decoration-none text-reset" href="pasta.html">
-                    <img src="Assets/Food/Carbonara.jpg" class="card-img-top" alt="Pasta">
+                <div class="card col-md-2 m-2 p-2 text-decoration-none text-reset">
+                    <img src="Assets/Food/Pepperoni.jpg" class="card-img-top" alt="Pepperoni">
                         <div class="card-body">
-                        <h2 class="card-title">Pasta</h2>
-                        <p class="card-text">Fresh and<br>hand made</p>
+                            <h2 class="card-title">Pepperoni</h2>
+                            <h4 class="card-text">£12</h4>
+                            <p class="card-text">Spicy sausage, creamy mozzarella and our tart, garlic-spiked pizza sauce.</p>
+                            <h5 class="card-text order">Order</h5>
                         </div>
                 </div>
-                <div class="card col-sm-3 m-2 p-2 text-decoration-none text-reset" href="sides.html">
-                    <img src="Assets/Food/Dough-balls.jpg" class="card-img-top" alt="Sides">
+                <div class="card col-md-2 m-2 p-2 text-decoration-none text-reset">
+                    <img src="Assets/Food/Chicken.jpg" class="card-img-top" alt="Chicken">
                         <div class="card-body">
-                        <h2 class="card-title">Sides</h2>
-                        <p class="card-text">Level up<br>your meal</p>
+                            <h2 class="card-title">Chicken</h2>
+                            <h4 class="card-text">£13</h4>
+                            <p class="card-text">Pesto, chicken, roasted red peppers, fontina cheese, and creamy ricotta.</p>
+                            <h5 class="card-text order">Order</h5>
                         </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row d-flex justify-content-center mx-2 py-3">
-            <!-- About -->
-            <div class="col-lg-6 m-4 p-4 bg-white">
-                <h1 >Welcome to Charlie's Pizza house</h1>
-                <p class="flag">We bring a slice of Italy to the heart of Bury St Edmunds. </p>
-                <p class="flag">We're passionate about homemade, from hand-stretched pizzas topped with the freshest ingredients to comforting bowls of pasta made with love.</p>
-                <p class="flag">Authentic, affordable, and always delicious, that's the Charlie's promise. Come and taste the difference.</p>
-            </div>
-            <!-- Deals -->
-            <div class="col-lg-5 m-4 p-2 bg-white">
-                <h2>Deals</h2>
-                <img class="deal-image m-2" src="Assets/Discounts/25-Off.jpg" alt="25% Off">
-                <img class="deal-image m-2" src="Assets/Discounts/Free-Dough-balls.jpg" alt="Free Dough Balls">
-                <img class="deal-image m-2" src="Assets//Discounts/Happy-Hour.jpg" alt="Happy Hour">
+                <div class="card col-md-2 m-2 p-2 text-decoration-none text-reset">
+                    <img src="Assets/Food/hawaiian.jpg" class="card-img-top" alt="Hawaiian">
+                        <div class="card-body">
+                            <h2 class="card-title">Hawaiian</h2>
+                            <h4 class="card-text">£13</h4>
+                            <p class="card-text">Juicy caramelized pineapple, prosciutto and pickled jalapeños.</p>
+                            <h5 class="card-text order">Order</h5>
+                        </div>
+                </div>
             </div>
         </div>
     </main>

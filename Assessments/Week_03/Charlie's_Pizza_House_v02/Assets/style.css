@@ -80,6 +80,24 @@ body {
     margin: 10px;
 }
 
+/* Pseduo elements for add to cart */
+.order {
+    cursor: pointer;
+}
+
+.order::after {
+    content: "+";
+    padding: 5px 10px;
+    background-color: #f0eded;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.order:hover {
+    opacity: 0.4;
+}
+
+/* Deal image animation */
 .deal-image {
     transition: all 0.2s ease;
     cursor: pointer;
@@ -90,6 +108,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Footer menu animations */
 .icon:hover, .footer-menu a:hover{
   opacity: 0.6;
 }
