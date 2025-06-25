@@ -49,8 +49,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color:#83a19a;
-    color: #405550;
+    background-color:#83a19a !important;
+    color: #405550 !important;
 }
 
 .logo{

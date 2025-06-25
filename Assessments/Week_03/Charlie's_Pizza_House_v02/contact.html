@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlie's Pizza House</title>
+    <title>Contact</title>
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style.css">
@@ -43,57 +43,37 @@
         </div>
     </nav>
 
-    <!-- Banner -->  
-    <div class="col-md-12 banner">
-        <img class="img-responsive" width="100%"  src="Assets/Food/Pizza-Banner.jpg">
-    </div>
-
     <!-- Main Content Section --> 
     <main class="container-fluid text-center bg-info">
-        
-        <!-- Food Sections --> 
-        <div class="card-deck d-flex justify-content-evenly mx-4 py-3 ">
-            <div class="row justify-content-evenly">
-                <a class="card col-md-3 p-2 m-2 text-decoration-none text-reset" href="pizza.html">
-                    <img src="Assets/Food/Margherita.jpg" class="card-img-top" alt="pizza">
-                        <div class="card-body">
-                        <h2 class="card-title">Pizza</h2>
-                        <p class="card-text">Cooked in our wood fired oven</p>
-                        </div>
-                </a>
-                <a class="card col-md-3 m-2 p-2 text-decoration-none text-reset" href="pasta.html">
-                    <img src="Assets/Food/Carbonara.jpg" class="card-img-top" alt="Pasta">
-                        <div class="card-body">
-                        <h2 class="card-title">Pasta</h2>
-                        <p class="card-text">Fresh and hand made</p>
-                        </div>
-                </a>
-                <a class="card col-md-3 m-2 p-2 text-decoration-none text-reset" href="sides.html">
-                    <img src="Assets/Food/Dough-balls.jpg" class="card-img-top" alt="Sides">
-                        <div class="card-body">
-                        <h2 class="card-title">Sides</h2>
-                        <p class="card-text">Level up your meal</p>
-                        </div>
-                </a>
-            </div>
-        </div>
 
-        <div class="row d-flex justify-content-center mx-2 py-3">
-            <!-- About -->
-            <div class="col-lg-6 m-4 p-4 bg-white">
-                <h1 >Welcome to Charlie's Pizza house</h1>
-                <p class="flag">We bring a slice of Italy to the heart of Bury St Edmunds. </p>
-                <p class="flag">We're passionate about homemade, from hand-stretched pizzas topped with the freshest ingredients to comforting bowls of pasta made with love.</p>
-                <p class="flag">Authentic, affordable, and always delicious, that's the Charlie's promise. Come and taste the difference.</p>
-            </div>
-            <!-- Deals -->
-            <div class="col-lg-5 m-4 p-2 bg-white">
-                <h2>Deals</h2>
-                <img class="deal-image m-2" src="Assets/Discounts/25-Off.jpg" alt="25% Off">
-                <img class="deal-image m-2" src="Assets/Discounts/Free-Dough-balls.jpg" alt="Free Dough Balls">
-                <img class="deal-image m-2" src="Assets//Discounts/Happy-Hour.jpg" alt="Happy Hour">
-            </div>
+     <!--Contact form-->    
+    <form class="row justify-content-evenly">
+        <h2 class="p-4">Please get in touch</h2>    
+        <div class="col-xl-7">
+            <label for="name" class="form-label">Name</label>
+            <input type="name" class="form-control" placeholder="John Smith" id="name">
         </div>
+        <div class="col-xl-7">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="John@smith.com" id="name">
+        </div>
+        <div class="col-xl-7">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" placeholder="07123 456789" id="phone">
+        </div>
+        <div class="col-xl-7">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" placeholder="Your message here"></textarea>
+        </div>
+        <div class="col-xl-7">
+            <label for="spam" class="form-label">Sign up to hear our latest deals</label>
+            <input type="checkbox" name="spam" id="spam">
+        </div>
+    </form>
+    <!--Submit Button--> 
+    <button type="submit" class="btn btn-primary m-4">Submit</button>
+
+
     </main>
 
     <!-- Footer -->
