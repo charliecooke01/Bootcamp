@@ -1,3 +1,17 @@
-// TODO: Add 2 new items to the sidebar called "Register" and "Help".
+var mainContentEl = document.querySelector(".main-content");
+var sideBarEl = document.querySelector(".sidebar ul");
+var sideBarEls = document.querySelectorAll(".sidebar ul");
 
-// TODO: MEGA CHALLENGE: can you add the Help link between Reports and Settings?
+// create a new div element
+var newEl = document.createElement("li");
+newEl.textContent = "New Title";
+var newEl2 = document.createElement("li");
+newEl2.textContent = "Help link";
+
+
+// append the new div to the main content
+sideBarEl.appendChild(newEl);
+
+for (var i = 0; i < sideBarEls.length; i++) {
+  sideBarEls[3].appendChild(newEl2);
+}
