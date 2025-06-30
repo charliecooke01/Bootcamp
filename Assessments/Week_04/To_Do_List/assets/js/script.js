@@ -1,26 +1,26 @@
-// 1. use document.getElementById to select the searchTerm Button
-var searchTerm = document.getElementById("searchTerm");
+//  Get task from input
+var createTask = document.getElementById("createTask");
 
-// 2. use document.getElementById to select the searchButton Button
-var searchButton = document.getElementById("searchButton");
+// Create button
+var createButton = document.getElementById("createButton");
 
-// 3. add an event listener to the searchButton that calls the search function when clicked
-searchButton.addEventListener("click", onClickSearhButton);
+// Add an event listener to the create button
+createButton.addEventListener("click", onClickCreateButton);
 
-function onClickSearhButton() {
-  // 4. use the value property of the searchInput to get the search term
-  var searchTermValue = searchTerm.value;
-  //TODO:
-  // 5. select the searches div using document.getElementById
-  var searchList = document.getElementById("searches");
-  //TODO:
-  // 6. create a new li element using document.createElement
-  //TODO:
-  var newSearchEl = document.createElement("li"); 
-  // 7. set the innerHTML of the new paragraph to the search term
-  //TODO:
-  newSearchEl.textContent = searchTermValue;
-  // 8. append the new paragraph to the searches div
-  //TODO:
-  searchList.appendChild(newSearchEl);
+
+function onClickCreateButton() {
+  // Assign task to value
+  var createTaskValue = createTask.value;
+
+  // Get active task list
+  var activeTasksList = document.getElementById("activeTasks");
+
+  // Create a new element using task value
+  var newTaskEl = document.createElement("p"); 
+
+  // Set the innerHTML of the new paragraph to the task input
+  newTaskEl.textContent = createTaskValue;
+
+  // Append the new paragraph to the task list
+  activeTasksList.appendChild(newTaskEl);
 }
