@@ -11,19 +11,22 @@ createButton.addEventListener("click", onClickCreateButton);
 //var deleteButton = document.getElementsByClassName("deleteButton")[0];
 
 // Add an event listener to the delete button
-deleteButton.addEventListener("click", onClickDeleteButton);
+//deleteButton.addEventListener("click", onClickDeleteButton);
+
+var TaskValue = 1;
 
 function onClickCreateButton() {
 
   
   // Assign task to value
-  var createTaskSpaces = createTask.value;
+  //var createTaskSpaces = createTask.value;
   // remove spaces
-  let createTaskValue = createTaskSpaces.replace(/ /g, "_");
+  //let createTaskValue = createTaskSpaces.replace(/ /g, "_");
+
   //create new div using value for ids
-  var newItem = ` <div id="${createTaskValue}">
-                    <p contenteditable="true">${createTaskValue}</p><br>
-                    <button id="${createTaskValue}button">Delete Task</button>
+  var newItem = ` <div id="${TaskValue}">
+                    <p contenteditable="true">${TaskValue}</p><br>
+                    <button id="${TaskValue}button" onClick="onClickDeleteButton()">Delete Task</button>
                   </div>`;
 
   // get active task div
@@ -37,16 +40,15 @@ function onClickCreateButton() {
 
   console.log(activeTasks.innerHTML)
 
-  //function onClickDeleteButton() {
-  //
-  // const elementToRemove = document.getElementById('element');
-  //  elementToRemove.parentNode.removeChild(elementToRemove);
-  //} 
+
 
 }
 
-//function onClickDeleteButton(element) {
-//
+
+
+function onClickDeleteButton(element) {
+
+  console.log(element.target)
 // const elementToRemove = document.getElementById('element');
 //  elementToRemove.parentNode.removeChild(elementToRemove);
-//}
+}
