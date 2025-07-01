@@ -8,7 +8,7 @@ var createButton = document.getElementById("createButton");
 createButton.addEventListener("click", onClickCreateButton);
 
 // Delete button
-var deleteButton = document.getElementsByClassName("deleteButton")[0];
+//var deleteButton = document.getElementsByClassName("deleteButton")[0];
 
 // Add an event listener to the delete button
 deleteButton.addEventListener("click", onClickDeleteButton);
@@ -17,25 +17,36 @@ function onClickCreateButton() {
 
   
   // Assign task to value
-  var createTaskValue = createTask.value;
-
-  var newItem = ` <div class="task">
+  var createTaskSpaces = createTask.value;
+  // remove spaces
+  let createTaskValue = createTaskSpaces.replace(/ /g, "_");
+  //create new div using value for ids
+  var newItem = ` <div id="${createTaskValue}">
                     <p contenteditable="true">${createTaskValue}</p><br>
-                    <button class="deleteButton">Delete Task</button>
-                    <button class="archiveButton">Archive Task</button>
+                    <button id="${createTaskValue}button">Delete Task</button>
                   </div>`;
 
-  document.getElementById("activeTasks").innerHTML += newItem;
+  // get active task div
+  var activeTasks = document.getElementById("activeTasks");
+  // add new div
+  activeTasks.innerHTML += newItem;
 
-  // Get active task list
-  //var activeTasksList = document.getElementById("activeTasks");
 
-  //activeTasksList.appendChild(newItem);
-  
- console.log("test")
+  // Add an event listener to the delete button
+  //deleteButton.addEventListener("click", onClickDeletebutton);
+
+  console.log(activeTasks.innerHTML)
+
+  //function onClickDeleteButton() {
+  //
+  // const elementToRemove = document.getElementById('element');
+  //  elementToRemove.parentNode.removeChild(elementToRemove);
+  //} 
+
 }
 
- function onClickDeleteButton() {
-  const elementToRemove = document.getElementsByClassName('task')[0];
-  elementToRemove.parentNode.removeChild(elementToRemove);
- }
+//function onClickDeleteButton(element) {
+//
+// const elementToRemove = document.getElementById('element');
+//  elementToRemove.parentNode.removeChild(elementToRemove);
+//}
