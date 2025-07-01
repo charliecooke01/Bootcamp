@@ -7,13 +7,20 @@ var createButton = document.getElementById("createButton");
 // Add an event listener to the create button
 createButton.addEventListener("click", onClickCreateButton);
 
+// Delete button
+var deleteButton = document.getElementsByClassName("deleteButton")[0];
+
+// Add an event listener to the delete button
+deleteButton.addEventListener("click", onClickDeleteButton);
 
 function onClickCreateButton() {
+
+  
   // Assign task to value
   var createTaskValue = createTask.value;
 
-  var newItem = ` <div>
-                    <textarea id="message" name="message" rows="3" cols="30">${createTaskValue}</textarea><br>
+  var newItem = ` <div class="task">
+                    <p contenteditable="true">${createTaskValue}</p><br>
                     <button class="deleteButton">Delete Task</button>
                     <button class="archiveButton">Archive Task</button>
                   </div>`;
@@ -21,19 +28,14 @@ function onClickCreateButton() {
   document.getElementById("activeTasks").innerHTML += newItem;
 
   // Get active task list
-  var activeTasksList = document.getElementById("activeTasks");
+  //var activeTasksList = document.getElementById("activeTasks");
 
-  // Create a new element using task value
-  //var newTaskEl = document.createElement("p"); 
-
-  // Set the innerHTML of the new paragraph to the task input
-  //newTaskEl.textContent = createTaskValue;
-
-  // Append the new paragraph to the task list
-  //activeTasksList.appendChild(newTaskEl);
-
-  activeTasksList.appendChild(newItem);
-
- 
+  //activeTasksList.appendChild(newItem);
+  
+ console.log("test")
 }
- console.log(activeTasksList)
+
+ function onClickDeleteButton() {
+  const elementToRemove = document.getElementsByClassName('task')[0];
+  elementToRemove.parentNode.removeChild(elementToRemove);
+ }
