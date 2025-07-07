@@ -1,10 +1,13 @@
+/* Body content */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f9;
+    color: #363636;
+    background: linear-gradient(149deg,rgba(247, 237, 237, 1) 0%, rgba(157, 176, 250, 1) 100%);
 }
 
+/* container styling */
 .container {
     display: flex;
     height: 100vh;
@@ -27,15 +30,28 @@ body, html {
     border-radius: 8px;
 }
 
+/* button styling */
 button {
     padding: 10px 20px;
-    background-color: #2d3e50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+#createButton{
+    background-color: #83cf6c;
+}
+
+.deleteButton{
+    background-color: #d17160;
+}
+
+.editButton{
+    background-color: #6891dd;
+}
+
+/* input box */
 input[type="text"] {
     padding: 9px;
     width: 20%;

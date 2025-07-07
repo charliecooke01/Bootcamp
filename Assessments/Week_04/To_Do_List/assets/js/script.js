@@ -27,8 +27,8 @@ function onClickCreateTask() {
   //create new div using value for ids
   var newItem = `<div id="${taskValue}">
                     <p>${taskValue}</p><br>
-                    <button id="${taskValue}edit" onclick="onClickEditButton(this)">Edit Task</button>
-                    <button id="${taskValue}button" onclick="onClickDeleteButton(this)">Delete Task</button>
+                    <button id="${taskValue}edit" class="editButton" onclick="onClickEditButton(this)">Edit Task</button>
+                    <button id="${taskValue}button" class="deleteButton" onclick="onClickDeleteButton(this)">Delete Task</button>
                   </div>`;
 
   // get active task div
