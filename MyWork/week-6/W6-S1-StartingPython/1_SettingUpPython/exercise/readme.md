@@ -78,7 +78,7 @@ python -m venv venv
 - Windows:
 
 ```sh
-venv\Scripts\activate
+.\venv\Scripts\activate.bat
 ```
 
 - MacOS:
