@@ -77,6 +77,8 @@ python -m venv venv
 
 - Windows:
 
+cd C:\Users\ccooke\AppData\Local\Programs\Python\Python313
+
 ```sh
 .\venv\Scripts\activate.bat
 ```

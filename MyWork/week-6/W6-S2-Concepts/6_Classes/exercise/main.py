@@ -2,10 +2,13 @@ class Person:
     def __init__(self, name, age, height=0):
         self.name = name
         self.age = age
-        self.height = 0
+        self.height = height
 
     def introduce(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+        print(f"Hi my name is {self.name} and I am {self.age} years old.")
+
+    def speak(self):
+        print(f"Hi I'm a person")
 
 
 class Student(Person):
@@ -16,6 +19,10 @@ class Student(Person):
     def introduce(self):
         super().introduce()
         print(f"Student ID: {self.student_id}")
+
+    def speak(self):
+        super().speak()
+        print(f"Hi I'm a student")
 
 
 class Manager(Person):
@@ -28,19 +35,27 @@ class Manager(Person):
         super().introduce()
         print(f"Employee ID: {self.employee_id} working in {self.department}")
 
+    def speak(self):
+        super().speak()
+        print(f"Hi I'm a manager")
+
 # Create a set of objects
 if __name__ == "__main__":
     person1 = Person("Alice", 25)
     person1.introduce()
+    person1.speak()
 
     student1 = Student("Bob", 30, "1234")
     student1.introduce()
+    student1.speak()
 
     manager1 = Manager("Charlie", 35, "HR", "5678")
     manager1.introduce()
+    manager1.speak()
 
     person2 = Person("David", 40)
     person2.introduce()
+    person2.speak()
 
 staff = [person1, student1, manager1, person2]
 
