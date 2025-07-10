@@ -70,8 +70,9 @@ cd my_python_project
 2. Create a virtual environment:
 
 ```sh
-python -m venv venv
+python -m venv myvenv
 ```
+## last word is name of virtual enviornemnt 'venv'
 
 3. Activate the virtual environment
 
@@ -80,7 +81,7 @@ python -m venv venv
 cd C:\Users\ccooke\AppData\Local\Programs\Python\Python313
 
 ```sh
-.\venv\Scripts\activate.bat
+.\myvenv\Scripts\activate.bat
 ```
 
 - MacOS:

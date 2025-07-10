@@ -28,7 +28,7 @@ def text_to_pdf(text, output_pdf_path):
     """Converts a text file to a PDF."""
     try:
         c = canvas.Canvas(output_pdf_path, pagesize=letter)
-        c.setFont("Helvetica", 12)
+        c.setFont("Helvetica", 16)
 
         # Define margins and line spacing
         width, height = letter
