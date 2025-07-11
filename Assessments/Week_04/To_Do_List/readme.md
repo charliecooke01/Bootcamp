@@ -2,6 +2,8 @@
 
 ## An interactive TODO list to display the use of DOM manipulation in JavaScript.
 
+A task list in which users can create tasks with a unique task name, edit the task name and delete the tasks.
+
 ## User Story
 
 As a user, I want to be able to manage my tasks using a simple web-based TODO list. I should be able to add new tasks, delete tasks, and, for bonus points, edit existing tasks and save the changes. The application should give me feedback if I try to add invalid tasks.
