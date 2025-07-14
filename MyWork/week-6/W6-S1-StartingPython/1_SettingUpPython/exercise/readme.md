@@ -79,7 +79,7 @@ python -m venv myvenv
 - Windows:
 
 cd C:\Users\ccooke\AppData\Local\Programs\Python\Python313
-
+deactivate
 ```sh
 .\myvenv\Scripts\activate.bat
 ```

@@ -1,3 +1,6 @@
+const fs = require("fs");
+const path = require("path");
+
 // import all the functions you need from the math module
 const { add, subtract, multiply, divide } = require("./math");
 

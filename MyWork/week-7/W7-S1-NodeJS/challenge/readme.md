@@ -38,3 +38,39 @@ As a developer, I want to create a modularized set of calculator functions that 
 
 - [ES6 Modules in Node.js](https://nodejs.org/docs/latest-v14.x/api/esm.html) - Learn how to export and import modules using ES6 syntax in Node.js.
 - [Node.js File System Module](https://nodejs.org/api/fs.html) - Official documentation for working with the file system in Node.js, including `appendFile`.
+
+
+Kamil:
+const fs = require("fs");
+const path = require("path");
+
+// Get the message from the command-line argument
+const message = process.argv[2];
+
+// Check if a message was provided
+if (!message) {
+console.log("Please provide a message as a command-line argument. \nExample: node app.js 'My new note'");
+process.exit(1); // Exit the process if no message is provided
+}
+
+const filePath = path.join(__dirname, "notes.txt");
+const noteWithNewLine = message + "\n"; // Add a new line for better readability
+
+// Append the new message to notes.txt
+fs.appendFile(filePath, noteWithNewLine, (err) => {
+if (err) {
+console.error("Error writing the message to the file:", err);
+return;
+}
+console.log("Message written to notes.txt successfully!");
+
+// Read and display the updated contents of the file
+fs.readFile(filePath, "utf8", (err, data) => {
+if (err) {
+console.error("Error reading the file:", err);
+return;
+}
+console.log("\nContent of notes.txt:");
+console.log(data);
+});
+});
