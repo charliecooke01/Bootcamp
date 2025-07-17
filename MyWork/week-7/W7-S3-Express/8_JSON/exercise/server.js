@@ -61,6 +61,18 @@ app.get("/data/:id", (req, res) => {
 });
 
 // TODO: Handle PUT request to update data by ID
+app.put("/data/:id", (req, res) => {
+  const data = readData();
+  const item = data.find((item) => item.id === req.params.id);
+  if (!item) {
+    return res.status(404).json({ message: "Data not found" });
+  }
+    data.push(item);
+    writeData(data);
+    const newData = { id: uuidv4(), ...req.body };
+    
+  }
+);
 
 // TODO: Handle DELETE request to delete data by ID
 

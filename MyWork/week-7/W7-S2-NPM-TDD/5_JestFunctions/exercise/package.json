@@ -5,7 +5,7 @@
   "directories": {
     "test": "tests"
   },
- "scripts": {
+  "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "node index.js"
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "In this exercise, you are given a module called `accounting.js` that contains several accounting functions. However, the code is currently failing the associated tests. Your task is to review the test cases, identify why the functions are not passing, and fix the accounting module code to meet the passing criteria.",
   "devDependencies": {
     "jest": "^29.7.0"
   }

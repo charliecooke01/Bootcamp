@@ -10,11 +10,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "In this exercise, you are provided with a module that retrieves a list of GitHub repositories for a given GitHub user. You can run the code using:",
   "dependencies": {
     "axios": "^1.7.7"
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

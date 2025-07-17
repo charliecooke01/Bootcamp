@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Express is a popular and flexible Node package that allows you to create your own web server and handle HTTP requests server-side.",
   "dependencies": {
     "express": "^4.21.2"
   }

@@ -1,0 +1,17 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "In this exercise, you will learn about code reuse by organizing functions into **modules** in Node.js. This is a key part of the **DRY** principle (Don't Repeat Yourself) in software development, which aims to reduce redundancy. Your task is to build a simple calculator with functions for:",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
+}
