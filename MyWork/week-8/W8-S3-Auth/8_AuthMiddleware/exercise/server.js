@@ -64,7 +64,7 @@ app.post("/login", async (req, res) => {
 });
 
 // TODO: Fix the route to use the authenticateJWT middleware
-app.get("/protected", (req, res) => {
+app.get("/protected", authenticateJWT, (req, res) => {
   res.json({ message: "This is a protected route", user: req.user });
 });
 
