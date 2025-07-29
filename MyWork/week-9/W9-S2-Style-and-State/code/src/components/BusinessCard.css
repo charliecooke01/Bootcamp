@@ -1,5 +1,12 @@
 .business-card {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 219, 243);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .photo-placeholder {
