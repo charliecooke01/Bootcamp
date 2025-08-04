@@ -5,7 +5,9 @@ function Form() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
+    source: '',
+    other: ''
   });
 
   const handleChange = (e) => {
@@ -53,6 +55,31 @@ function Form() {
             <textarea
               name="message"
               value={formData.message}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div className="form-group">
+          <label>
+            How did you hear of us?:
+            </label>
+            <select
+              name="source"
+              value={formData.source}
+              onChange={handleChange}
+            >
+            <option value="Search Engine">Search Engine</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Word of mouth">Word of mouth</option>
+            <option value="Other">Other</option>
+            </select>    
+        </div>
+        <div className="form-group">
+          <label>
+            Message:
+            <textarea
+              name="other"
+              value={formData.other}
               onChange={handleChange}
             />
           </label>
