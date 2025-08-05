@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { UserContext } from './contexts/UserContext';
+import { UserProvider } from './contexts/UserContext';
 import Tweet from './components/Tweet';
+import User from './components/User';
 
 import './App.css';
 

@@ -6,6 +6,7 @@ import { useBasket } from '../contexts/BasketContext';
 function Home() {
 
     // TODO: what does this function do?
+    // adds this item to basket on button click
   const { addToBasket } = useBasket();
 
   return (

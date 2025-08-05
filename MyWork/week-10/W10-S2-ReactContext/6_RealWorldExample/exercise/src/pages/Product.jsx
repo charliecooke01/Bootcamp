@@ -6,6 +6,8 @@ import { products } from '../data';
 
 function Product() {
     // TODO: what does this function do?
+    // checks if product exists, if so show product
+    // if not show product not found
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
   const { addToBasket } = useBasket();
